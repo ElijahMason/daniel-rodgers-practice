@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A letter. Daniel Rodgers</title>
+  <meta name="description" content="Write a brief to Daniel Rodgers. The page shows it and copies it.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/folio.css">
+</head>
+<body>
+  <a class="skip" href="#essay">Skip to the letter</a>
+  <div class="folio">
+    <header class="running">
+      <a class="name" href="index.html">Daniel Rodgers</a>
+      <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="contents">Contents</button>
+      <nav id="contents" class="nav" data-nav tabindex="-1">
+        <a href="index.html">Essay</a>
+        <a href="materials.html">Materials</a>
+        <a href="tolerances.html">Tolerances</a>
+        <a href="lines.html">Lines</a>
+        <a href="letter.html">Letter</a>
+      </nav>
+    </header>
+    <main id="essay">
+      <div class="note">
+        <h1>A letter, not a pitch.</h1>
+        <aside>Name the object and the one question the first build should answer.</aside>
+      </div>
+      <article class="letter">
+        <p class="dateline">To Daniel Rodgers</p>
+        <noscript>
+          <p>Scripts are off, so this page cannot assemble the brief. Write the same points in a message: what you are making, the question the build should answer, the kind of work, materials you have in mind, what the factory needs to see, and how to reply.</p>
+        </noscript>
+        <form data-brief action="#essay">
+          <div class="field">
+            <label for="making">What are you making? (required)</label>
+            <textarea id="making" name="making" required autocomplete="off"></textarea>
+          </div>
+          <div class="field">
+            <label for="question">What question should the first build answer? (required)
+              <span class="hint">One question. Daniel uses it to decide what to build and when to stop.</span>
+            </label>
+            <textarea id="question" name="question" required autocomplete="off"></textarea>
+          </div>
+          <fieldset class="field">
+            <legend>Kind of work (required)</legend>
+            <div class="choices">
+              <label><input type="radio" name="kind" value="Mechanism" required> Mechanism</label>
+              <label><input type="radio" name="kind" value="Circuit"> Circuit</label>
+              <label><input type="radio" name="kind" value="Mechanism and circuit"> Mechanism and circuit</label>
+              <label><input type="radio" name="kind" value="Not sure yet"> Not sure yet</label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="materials">Materials you already have in mind
+              <span class="hint">Leave this blank if the material is part of the question.</span>
+            </label>
+            <input id="materials" name="materials" type="text" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="factory">What does the factory need to see?</label>
+            <textarea id="factory" name="factory" autocomplete="off"></textarea>
+          </div>
+          <div class="field">
+            <label for="reply">Your email, for the reply (required)</label>
+            <input id="reply" name="reply" type="email" required autocomplete="email" inputmode="email">
+          </div>
+          <div class="actions">
+            <button type="submit">Show the letter</button>
+            <button type="button" class="quiet" data-brief-copy>Copy the letter</button>
+          </div>
+          <div class="brief-panel" data-brief-panel hidden>
+            <h2>The letter</h2>
+            <pre class="brief-text" data-brief-out></pre>
+            <a class="mail-link" data-brief-mail hidden>Open a message</a>
+            <p class="status" data-brief-status role="status"></p>
+          </div>
+        </form>
+      </article>
+    </main>
+    <footer class="colophon">
+      <p>Make one that a factory can read.</p>
+      <p>Daniel Rodgers. Custom hardware.</p>
+    </footer>
+  </div>
+  <script src="js/site.js"></script>
+</body>
+</html>
