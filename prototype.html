@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A prototype answers a question. Daniel Rodgers</title>
+  <meta name="description" content="Concept models, mechanical prototypes, electrical prototypes, and printed studies. Each build exists to answer one question.">
+  <meta name="theme-color" content="#efece6">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/sheet.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="sheet">
+    <div class="sheet-inner">
+      <header class="mast">
+        <a class="shop" href="index.html">
+          <span class="shop-name">Daniel Rodgers</span>
+          <span class="shop-trade">Custom hardware</span>
+        </a>
+        <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="sheet-nav">Sheets</button>
+        <nav id="sheet-nav" class="nav" data-nav tabindex="-1">
+          <a href="index.html">Index</a>
+          <a href="prototype.html">Prototype</a>
+          <a href="handoff.html">Handoff</a>
+          <a href="standards.html">Standards</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+      <main id="content">
+        <header class="page-head">
+          <p class="fig-kicker">Sheet 02</p>
+          <h1>A prototype answers a question.</h1>
+          <p class="lede">Daniel Rodgers makes the first physical version of a mechanism or a circuit. The build has a job: settle something a drawing alone keeps fuzzy. When the question has an answer, he stops and writes what a factory needs.</p>
+        </header>
+
+        <section class="block" id="concept">
+          <div class="split">
+            <div class="text">
+              <h2>Concept models</h2>
+              <p>A concept model is a form you can turn over. Two people can point at the same surface and disagree usefully. It does not have to carry load. It does have to show the arrangement: what moves, what stays, and what a hand touches.</p>
+              <p>He builds the model early, while the mechanism can still change. A precious model that nobody is allowed to mark up has already failed its job. The marks are the point. They show which idea survived the hand.</p>
+            </div>
+            <figure>
+              <svg class="svg-study" viewBox="0 0 720 420" aria-hidden="true" focusable="false">
+                <text x="36" y="40">hinge, end view</text>
+                <line class="center" x1="40" y1="210" x2="680" y2="210"/>
+                <line class="center" x1="250" y1="70" x2="250" y2="360"/>
+                <rect class="line" x="40" y="188" width="160" height="44"/>
+                <rect class="line" x="300" y="188" width="200" height="44"/>
+                <circle class="mask" cx="250" cy="210" r="62"/>
+                <circle class="pin" cx="250" cy="210" r="16"/>
+                <text x="40" y="170">leaf</text>
+                <text x="210" y="120">knuckle</text>
+                <text x="278" y="206">pin</text>
+                <text x="520" y="170">second leaf</text>
+              </svg>
+              <figcaption>Fig. 01, repeated. Hinge study. The arrangement is the lesson: two leaves share a pin. A principle, not a delivered part.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="block" id="mechanical">
+          <div class="split">
+            <div class="text">
+              <h2>Mechanical prototypes</h2>
+              <p>A mechanical prototype spends its time on motion, fit, and load. Will the latch clear the rib at full travel. Does the shaft bind when the bracket flexes. Which face takes the wear. He builds the feature that holds the doubt, and keeps the rest plain enough that the answer stays visible.</p>
+              <p>The hinge study on the index asks where a knuckle gap lives. A clip asks a different question: can a beam pass a rib and then stay. He picks the build that matches the doubt, instead of making a whole product look finished.</p>
+            </div>
+            <figure>
+              <svg class="svg-study" viewBox="0 0 720 460" aria-hidden="true" focusable="false">
+                <text x="36" y="36">clip study</text>
+                <rect class="mask" x="48" y="70" width="36" height="340"/>
+                <path class="line" d="M48 80 H84 M54 100 L78 124 M54 130 L78 154 M54 160 L78 184 M54 190 L78 214 M54 220 L78 244 M54 250 L78 274 M54 280 L78 304 M54 310 L78 334 M54 340 L78 364"/>
+                <path class="line" d="M84 150 H520 V220 H470 L440 275 H385 L420 220 H84 Z"/>
+                <path class="ghost" d="M300 310 H640 V390 H300 Z"/>
+                <path class="ghost" d="M390 310 V350 H470 V310"/>
+                <path class="line" d="M560 120 C600 120 610 170 560 190"/>
+                <path class="line" d="M560 190 L548 180 M560 190 L572 178"/>
+                <text x="500" y="110">deflect</text>
+                <text x="100" y="140">beam</text>
+                <text x="400" y="265">undercut</text>
+                <text x="500" y="430">rib, shown dashed</text>
+              </svg>
+              <figcaption>Fig. 02. Clip study. A cantilever beam, an undercut, and the rib it has to pass. A principle, not a delivered part.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="block" id="electrical">
+          <div class="split">
+            <div class="text">
+              <h2>Electrical prototypes</h2>
+              <p>An electrical prototype is a circuit you can power and probe. He builds it when the schematic is still a claim. Values move. A connector turns out to sit in the way. A return path was a wish. The board that leaves the bench matches the schematic he writes after the probing, not the sketch from the night before.</p>
+              <p>The study below is only a topology: a source, a switch, a resistor, and a load, in series. It shows the kind of drawing a conversation can start from. It is not a board from a past job, and it is not a product.</p>
+            </div>
+            <figure>
+              <svg class="svg-study" viewBox="0 0 720 460" aria-hidden="true" focusable="false">
+                <text x="36" y="40">series circuit</text>
+                <path class="line" d="M180 130 H260"/>
+                <path class="line" d="M260 130 L320 78"/>
+                <path class="line" d="M340 130 H430"/>
+                <path class="line" d="M430 130 L446 102 L470 158 L494 102 L518 158 L542 102 L558 130"/>
+                <path class="line" d="M558 130 H650 V320 H450"/>
+                <circle class="mask" cx="400" cy="320" r="42"/>
+                <path class="line" d="M358 320 H180 V250"/>
+                <path class="pin" d="M158 168 H202"/>
+                <path class="line" d="M166 198 H194"/>
+                <path class="line" d="M180 130 V168"/>
+                <path class="line" d="M180 198 V250"/>
+                <text x="48" y="188">source</text>
+                <text x="250" y="68">switch</text>
+                <text x="455" y="90">resistor</text>
+                <text x="372" y="390">load</text>
+              </svg>
+              <figcaption>Fig. 03. Circuit study. A source, a switch, a resistor, and a load. Topology only, not a delivered board.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="block" id="printed">
+          <h2>Printed studies</h2>
+          <p>A printed study is a fast way to hold a shape: a hinge, a clip, a housing split, the place a finger finds a switch. Plastic answers questions about geometry and assembly. It does not answer creep, heat, or a thread that must hold. He writes those limits on the sheet, and he names the production material even when the study was printed in something else.</p>
+          <p>The printed object is evidence for a drawing. A batch for sale is a different trade. When the shape has taught what it can, he stops printing and writes the handoff.</p>
+          <p><a class="link-row" href="handoff.html">Go to the handoff</a></p>
+        </section>
+      </main>
+      <footer class="titleblock">
+        <p class="tb-sheet"><span>Sheet 02</span> Prototype</p>
+        <p class="tb-scale"><span>Scale</span> Not to scale</p>
+        <p class="tb-title"><span>Title</span> Make one that a factory can read.</p>
+      </footer>
+    </div>
+  </div>
+  <script src="js/site.js"></script>
+</body>
+</html>
